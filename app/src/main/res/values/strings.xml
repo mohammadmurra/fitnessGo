@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">fitnessGo</string>
+    <string name="title_activity_today_fit">todayFit</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="day">Day:</string>
+    <string name="date">date:</string>
+    <string name="yes_radio_text">Yes</string>
+    <string name="No_radio_text">No</string>
+    <string name="Description_label">Description :</string>
+    <string name="button_text">Save</string>
+</resources>
