@@ -12,4 +12,17 @@
     <string name="No_radio_text">No</string>
     <string name="Description_label">Description :</string>
     <string name="button_text">Save</string>
+    <string name="goes_to_gym">Goes To Gym :</string>
+    <string name="what_you_played">What You Played :</string>
+    <string name="your_description">Your Description :</string>
+    <string name="workoutTitle"> Day</string>
+    //// days Spinner
+    <string-array name="Workout">
+        <item>running</item>
+        <item>swimming</item>
+        <item>BodyWork out</item>
+        <item>Walking</item>
+        <item>Yoga</item>
+        <item>Gymnastics</item>
+    </string-array>
 </resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:layout_width="match_parent"
-
+android:layout_gravity="center"
     android:orientation="vertical"
     android:layout_margin="20dp"
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="wrap_content">
@@ -19,11 +19,12 @@
             android:layout_height="wrap_content"
             android:text="@string/day" />
 
-        <Spinner
-            android:id="@+id/day_spinner"
+        <TextView
+            android:id="@+id/day_TextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="7dp" />
+            style="@style/Theme.Label"
+             />
     </LinearLayout>
 
     <LinearLayout
@@ -42,7 +43,7 @@
         <TextView
             android:id="@+id/fitDate"
             style="@style/Theme.Label"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>
     <LinearLayout
@@ -59,6 +60,7 @@
             android:text="Are You Goes To gym to day:"
             />
         <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -67,6 +69,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 style="@style/Theme.Label"
+                android:checked="true"
                 android:text="@string/yes_radio_text"
                 />
             <RadioButton android:id="@+id/no_radio"
@@ -112,14 +115,21 @@
             android:text="@string/Description_label" />
 
         <EditText
-            style="@style/Theme.EditTextStyle"
+            android:id="@+id/descText"
+
             android:layout_width="match_parent"
+            android:imeOptions="actionDone"
+            style="@style/Theme.Details.EditText"
             android:layout_height="180dp" />
     </LinearLayout>
+
     <Button
+        android:id="@+id/save_Button"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/button_text"/>
+        android:onClick="save_process"
+
+        android:text="@string/button_text" />
 
 </LinearLayout>
